@@ -1,0 +1,67 @@
+/* Skills.css */
+
+.skills {
+    background-color: #f7f7f7;
+    padding: 5rem 0rem;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 1s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill i {
+    font-size: 48px;
+    color: #000;
+  }
+  
+  .skill h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .skill p {
+    margin: 1rem 0;
+  }
+  
+  /* Animation for fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

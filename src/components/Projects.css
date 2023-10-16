@@ -1,0 +1,74 @@
+/* Projects.css */
+
+.projects {
+  background-color: #f7f7f7;
+  padding: 5rem 0rem;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.projects-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project-card {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-details {
+  flex: 2;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.project p {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.project-details p:last-child {
+  margin-bottom: 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

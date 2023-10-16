@@ -1,0 +1,82 @@
+/* Header.css */
+
+.header {
+    background-color: #000;
+    /* Background color for the header (black) */
+    color: #fff;
+    /* Text color for the header (white) */
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    cursor: pointer;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    /* Apply the "Roboto Slab" font style */
+}
+
+.menu-icon {
+    display: none;
+    /* Hide the menu icon by default on larger screens */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    /* Icon color (white) */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align navigation links to the right */
+}
+
+.header-nav.active {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    /* Background color for the navigation menu (black) */
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    /* Text color for navigation links (white) */
+    margin-right: 20px;
+    /* Adjust the spacing between links */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    /* Add an underline on hover for links */
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-nav a {
+        margin: 3px 0px;
+        right: 5px;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+}

@@ -1,0 +1,54 @@
+/* Experiences.css */
+
+.experiences {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 1s;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    /* Dark gray text color */
+}
+
+.experience-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-top: 0;
+}
+
+.experience-card p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
